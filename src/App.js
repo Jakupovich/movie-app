@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-
+import React, { useEffect, useState } from 'react';
+import Movies from './movie';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const [randomState,setRandomState]=useState([])
+  async function getMovies(){
+    const response = await fetch("https://api.themoviedb.org/3/movie/popular?api_key=f28aa71682075a83b20e0e121c7582e3&language=en-US&page=1")
+    const data = await response.json()
+    setRandomState(data.results)
+  }
+  useEffect(() => {
+    getMovies()
+  },[]);
+  return(
+    <div className='main'>  
+      {randomState.map((movie)=>{
+        console.log(movie)
+        return(
+          <Movies movie={movie}/>
+        )
+      })}
     </div>
-  );
+  )
 }
-
 export default App;
