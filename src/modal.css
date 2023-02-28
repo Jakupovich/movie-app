@@ -7,7 +7,7 @@
 .movie-text-modal{
     width: 700px;
     margin-left: 300px;
-    margin-top: 250px;
+    margin-top: 130px;
     text-align: center;
 
 }
@@ -23,7 +23,7 @@
     width: 50px;
     position: absolute;
     margin-top: 24px;
-    background-color: #F4A259;
+    background-color: #0087f5;
     border-radius: 2px;
     transform: rotate(45deg);
     transition: all .3s ease-in;
@@ -34,7 +34,7 @@
     width: 50px;
     position: absolute;
     margin-top: 24px;
-    background-color: #F4A259;
+    background-color: #0087f5;
     border-radius: 2px;
     transform: rotate(-45deg);
     transition: all .3s ease-in;
@@ -68,4 +68,8 @@
 
 .modal-video{
     width: 400px;
+}
+.triler{
+  width: 700px;
+  height: 400px;
 }

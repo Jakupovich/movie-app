@@ -7,32 +7,76 @@
   grid-template-columns: auto auto auto;
   gap: 50px;
   padding: 50px;
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 7%, rgba(255,119,0,1) 64%, rgba(255,154,0,1) 96%);
+  background-color: #fff;
 }
 .movie-container{
   border-radius: 20px;
-  transition: transform ease 500ms;
+  animation-name: FadeIn;
+  animation-duration: 1s;
+  transition-timing-function: linear;
   display: flex;
   align-items: center;
+  cursor: pointer;
   width: 500px;
   height: 200px;
-  border: 2px solid #fff;
+  border: 2px solid black;
 }
-.movie-container:hover{
-  box-shadow: 0 0 30px #fff;
-  transform: translate(0, -10px);
-}
+
 .movie-image{
   border-radius: 20px;
   width: 150px;
   height: 200px;
 }
 .movie-title{
-  color: #fff;
+  color: black;
   text-align: center;
 }
 .movie-vote{
-  color: #fff;
+  color: black;
   text-align: center;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
