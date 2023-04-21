@@ -80,10 +80,26 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(92,70,221,1) 0%, rgba
 	text-align: center;
 	font-size: 40px;
 }
+.content-upcoming{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background: rgb(251,249,63);
+	background: radial-gradient(circle, rgba(251,249,63,1) 0%, rgba(241,0,0,1) 100%);
+}
 
-
-
-
+.content-popular{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background: rgb(170,63,251);
+	background: radial-gradient(circle, rgba(170,63,251,1) 0%, rgba(241,0,159,1) 100%);
+	
+}
 
 
 
