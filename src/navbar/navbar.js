@@ -10,16 +10,13 @@ function Navbar(){
                 <div className='container'>
                     <div className='buttons'>
                     <p>
-                        <a>Home</a>
+                        <a className="nav-buttons"href='/'>Home</a>
                     </p>
                     <p>
-                        <a href="upcoming">Upcoming</a>
+                        <a className="btn-left nav-buttons" href="upcoming">Upcoming</a>
                     </p>
                     <p>
-                        <a href='popular'>Popular Movies</a>
-                    </p>
-                    <p>
-                        <a>Lorem</a>
+                        <a className="btn-left nav-buttons" href='popular'>Popular Movies</a>
                     </p>
                     </div>
                 </div>

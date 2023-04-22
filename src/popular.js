@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Modal from 'react-modal';
-
+import Navbar from './navbar/navbar';
 
 
 function PopularMovies(props){
@@ -27,6 +27,7 @@ function PopularMovies(props){
 
 
         <>
+        <Navbar/>
             <div className='content-popular'>
                 <div className='text'>
                     <h1 className='welcome-text'>Popular Movies</h1>

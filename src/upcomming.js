@@ -4,6 +4,8 @@ import "./modal.css"
 import './App.css';
 import './upcoming.css';
 import './navbar/navbar.css';
+import Navbar from './navbar/navbar';
+
 function Upcomming(props) {
     const { movie } = props
     const [upcomming, setUpcomming] = useState([])
@@ -28,6 +30,7 @@ function Upcomming(props) {
 
 
         <>
+        <Navbar/>
             <div className='content-upcoming'>
                 <div className='text'>
                     <h1 className='welcome-text'>Upcoming Movies</h1>
