@@ -32,7 +32,7 @@ function App() {
           <hr></hr>
           <p className='big-text'>Welcome to Norda Movies. On our navigation you can choose the movies you are interested in. We offer all the latest movies, series, thrillers... We wish you a good experience on our site.</p>
         </div>
-        <img className="Slika" src="https://travnik-2035.netlify.app/images/bg-slider-03.webp" alt="background"></img>
+        <img className="Slika" src="https://travnik-2035.netlify.app/images/bg-slider-03.webp" alt="background"></img> 
       </div>
       <div className='aboutMovies'>
         <h1 className='video-library'>Our video library</h1>

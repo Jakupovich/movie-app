@@ -35,7 +35,9 @@
   color: black;
   text-align: center;
 }
-
+.aboutMovies{
+  text-align: center;
+}
 @keyframes FadeIn {
   0% {
     opacity: 0;
