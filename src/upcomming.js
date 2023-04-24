@@ -7,7 +7,6 @@ import './navbar/navbar.css';
 import Navbar from './navbar/navbar';
 
 function Upcoming(props) {
-  const { movie } = props;
   const [upcoming, setUpcoming] = useState([]);
   const [modalIsOpen, setIsOpen] = useState(false);
 
@@ -46,7 +45,7 @@ function Upcoming(props) {
             Here you can see which films will be coming to your theaters as soon as possible
           </p>
         </div>
-        <img className='Slika' src='https://travnik-2035.netlify.app/images/bg-slider-03.webp'></img>
+        <img alt="" className='Slika' src='https://travnik-2035.netlify.app/images/bg-slider-03.webp'></img>
       </div>
       <div className='main'>
         {upcoming.map((film) => {
@@ -54,7 +53,7 @@ function Upcoming(props) {
             <div key={film.id}>
               <Modal isOpen={modalIsOpen === film} onRequestClose={closeModal}>
                 <div className='modalWrapper'>
-                  <img
+                  <img alt=""
                     className='movie-image-modal'
                     src={'https://image.tmdb.org/t/p/w500/' + (film?.poster_path || '')}
                   ></img>
@@ -82,7 +81,7 @@ function Upcoming(props) {
                 </div>
               </Modal>
               <div onClick={() => openModal(film)} className='movie-container'>
-                <img
+                <img alt=""
                   className='movie-image'
                   src={'https://image.tmdb.org/t/p/w500/' + (film?.poster_path || '')}
                 ></img>

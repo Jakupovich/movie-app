@@ -4,7 +4,6 @@ import Navbar from './navbar/navbar';
 
 
 function PopularMovies(props){
-    const { movie } = props
     const [upcomming, setUpcomming] = useState([])
     const [modalIsOpen, setIsOpen] = useState(false);
     async function getUpcomming() {
@@ -34,7 +33,7 @@ function PopularMovies(props){
                     <hr></hr>
                     <p className='big-text'>You can watch all the most popular movies in your region as well as in the world</p>
                 </div>
-                <img className="Slika"src="https://travnik-2035.netlify.app/images/bg-slider-03.webp"></img>
+                <img alt="" className="Slika"src="https://travnik-2035.netlify.app/images/bg-slider-03.webp"></img>
             </div>
         <div className='main'>
             {upcomming.map((film) => {
@@ -45,7 +44,7 @@ function PopularMovies(props){
                             onRequestClose={closeModal}
                         >
                             <div className='modalWrapper'>
-                                <img className='movie-image-modal' src={"https://image.tmdb.org/t/p/w500/" + (film?.poster_path || "")}></img>
+                                <img alt="" className='movie-image-modal' src={"https://image.tmdb.org/t/p/w500/" + (film?.poster_path || "")}></img>
                                 <div onClick={closeModal} class="close-container">
                                     <div class="leftright"></div>
                                     <div class="rightleft"></div>
@@ -64,7 +63,7 @@ function PopularMovies(props){
                             </div>
                         </Modal>
                         <div onClick={() => openModal(film)} className="movie-container">
-                            <img className='movie-image' src={"https://image.tmdb.org/t/p/w500/" + (film?.poster_path || "")}></img>
+                            <img alt="" className='movie-image' src={"https://image.tmdb.org/t/p/w500/" + (film?.poster_path || "")}></img>
                             <div>
                                 <h1 className='movie-title'>{film?.title}</h1>
                                 <p className='movie-vote'>Avrage vote: {film?.vote_average}</p>
